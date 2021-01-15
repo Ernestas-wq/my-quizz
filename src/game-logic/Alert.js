@@ -9,7 +9,7 @@ const Alert = () => {
       showAlert({});
     }, 2000);
     return () => clearTimeout(timeout);
-  }, [show]);
+  }, [showAlert]);
   return <p className={`gameover__alert gameover__alert--${type}`}>{msg}</p>;
 };
 

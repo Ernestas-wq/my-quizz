@@ -59,8 +59,9 @@
     }
   }
   &__answer-wrapper:hover > div {
-    background-color: var(--clr-primary-5);
-
-    color: var(--clr-white);
+    @include responsive-md() {
+      background-color: var(--clr-primary-5);
+      color: var(--clr-white);
+    }
   }
 }
