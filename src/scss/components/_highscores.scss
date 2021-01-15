@@ -1,0 +1,19 @@
+.highscores {
+  @include align-center();
+  flex-direction: column;
+  margin-top: 1rem;
+
+  li p {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin-top: 1rem;
+    font-size: 22px;
+    color: var(--clr-grey-5);
+  }
+  li span {
+    margin-left: 2rem;
+    font-weight: 500;
+    color: var(--clr-orange-6);
+  }
+}

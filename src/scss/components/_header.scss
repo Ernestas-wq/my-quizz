@@ -1,0 +1,21 @@
+.header {
+  @include align-center();
+  flex-direction: column;
+  h3 {
+    margin-top: 3rem;
+  }
+  &__container {
+    display: flex;
+    width: var(--fixed-width);
+    justify-content: space-around;
+    margin-top: 3rem;
+  }
+  &__button {
+    @include default-btn();
+    margin: 0.5rem;
+  }
+  &__button:hover {
+    color: var(--clr-black);
+    background: transparent;
+  }
+}

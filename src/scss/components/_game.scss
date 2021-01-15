@@ -1,0 +1,66 @@
+.game {
+  @include align-center();
+  margin: 0 auto;
+  width: 80%;
+  height: 70vh;
+  flex-direction: column;
+
+  &__UI {
+    width: 100%;
+    @include align-center();
+    justify-content: space-between;
+  }
+  &__score,
+  &__tracker {
+    color: var(--clr-primary-5);
+    font-size: 22px;
+  }
+
+  &__question {
+    align-self: start;
+    margin-top: 2rem;
+    font-size: 24px;
+  }
+  &__answers {
+    @include align-center();
+    width: 100%;
+    margin-top: 2rem;
+    flex-direction: column;
+  }
+
+  &__prefix {
+    font-size: 16px;
+    font-weight: 500;
+    width: 5%;
+    transition: var(--transition);
+    height: 100%;
+    @include align-center();
+  }
+
+  &__answer-wrapper {
+    @include align-center();
+    border: 2px solid var(--clr-primary-5);
+    width: 100%;
+    margin-top: 0.5rem;
+    cursor: pointer;
+
+    &--correct {
+      background-color: var(--clr-green-light);
+    }
+    &--incorrect {
+      background-color: var(--clr-red-light);
+    }
+    p {
+      padding: 0.5rem;
+      width: 95%;
+      font-size: 14px;
+      border-left: 2px solid var(--clr-primary-5);
+      height: 100%;
+    }
+  }
+  &__answer-wrapper:hover > div {
+    background-color: var(--clr-primary-5);
+
+    color: var(--clr-white);
+  }
+}
