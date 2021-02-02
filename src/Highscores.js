@@ -8,13 +8,10 @@ const getLocalStorage = () => {
 
 const Highscores = () => {
   const [highscores, setHighscores] = useState(getLocalStorage());
-  const sortedHighscores = highscores.sort((a, b) => b.score - a.score).slice(0, 5);
   useEffect(() => {
     const newHighscores = highscores.sort((a, b) => b.score - a.score).slice(0, 5);
     setHighscores(newHighscores);
   }, [highscores]);
-
-  console.log(sortedHighscores);
 
   return (
     <section className="highscores">

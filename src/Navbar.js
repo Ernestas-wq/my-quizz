@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
   const { isSidebarOpen, closeSidebar, openSidebar } = useGlobalContext();
   const linksContainerRef = useRef(null);
+
   useEffect(() => {
     if (isSidebarOpen) {
       linksContainerRef.current.style.transform = 'translateX(0%)';

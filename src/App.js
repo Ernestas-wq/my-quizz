@@ -1,7 +1,6 @@
 import React from 'react';
 import Navbar from './Navbar';
 import Home from './Home';
-// import Game from './Game';
 import Game from './game-logic';
 import Highscores from './Highscores';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
