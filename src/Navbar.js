@@ -4,6 +4,8 @@ import { FaTimes } from 'react-icons/fa';
 import { links } from './data/links';
 import { useGlobalContext } from './context';
 import { Link } from 'react-router-dom';
+import { MdWork } from 'react-icons/md';
+
 const Navbar = () => {
   const { isSidebarOpen, closeSidebar, openSidebar } = useGlobalContext();
   const linksContainerRef = useRef(null);
@@ -41,6 +43,11 @@ const Navbar = () => {
             </li>
           );
         })}
+        <li>
+          <a href="https://ernestas-portfolio.netlify.app/" target="_blank">
+            Portfolio <MdWork />
+          </a>
+        </li>
       </ul>
     </nav>
   );
